@@ -26,6 +26,9 @@ Partition Tolerance. Допускает распределенное хране�
 
 ## Источники 
 https://www.scylladb.com/glossary/cap-theorem/
+
 https://dragonflydb.io/features
+
 https://arenadata.tech/products/arenadata-db/
+
 https://docs.arenadata.io/adb/index.html
