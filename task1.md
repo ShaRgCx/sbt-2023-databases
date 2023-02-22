@@ -23,3 +23,9 @@ Consistent. Явялется ACID-системой с уровнем изоля�
 Unavailability. Из-за наличия транзакций, необходима согласованность данных, что может занимать время.
 
 Partition Tolerance. Допускает распределенное хранение на нодах с зеркалами.
+
+## Источники 
+https://www.scylladb.com/glossary/cap-theorem/
+https://dragonflydb.io/features
+https://arenadata.tech/products/arenadata-db/
+https://docs.arenadata.io/adb/index.html
