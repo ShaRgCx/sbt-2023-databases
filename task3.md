@@ -1,8 +1,10 @@
 ## Установка Redis
 Установим и запустим в докере Редис:
+
 ![image](https://user-images.githubusercontent.com/78553805/234354265-96f9370a-9d91-4293-8a2d-34a5561977fb.png)
 
 Установим и подключимся в Redisinsight. Проверим, что стандартные команды выполняются:
+
 ![image](https://user-images.githubusercontent.com/78553805/234354623-da0c815d-6f22-44c5-b00c-b91fe298f1fa.png)
 
 ## Проверка производительности
@@ -123,10 +125,30 @@ db.flushall()
 
 ![image](https://user-images.githubusercontent.com/78553805/234377361-27371c1f-5123-498b-b01b-ab094ce4e0f3.png)
 
+Кстати, вот наши красивые данные в RedisInsight:
+
+![image](https://user-images.githubusercontent.com/78553805/234378876-bfcdaac8-ccd1-4403-a4c1-f1190696852d.png)
+
+
 ## Микровывод
 Исходя из полученных данных, можем сделать вывод о том, что лучше всего в тестах на запись и чтение себя показывает list (что неудивительно). 
 При этом хуже всего с записью справился HSET, а с чтением STRING.
 
 ## Настройка кластера на 3х нодах с отказоустойчивостью и тюн таймаутов
 
-TODO
+Чтобы не выдумывать велосипед, воспользуемся готовым решением с [гитхаба](https://github.com/vishnudxb/docker-redis-cluster). 
+
+Создаем кластер следующим образом: 
+
+![image](https://user-images.githubusercontent.com/78553805/234379798-060fa709-51c4-46ce-acd2-97ed02c523a2.png)
+
+Для редактирования таймаутов, можнм воспользоваться redis-cli и зайдя на конфиг нужной нойды. Например, вот так:
+
+![image](https://user-images.githubusercontent.com/78553805/234380497-1821909d-0e09-4231-bf32-3649d8060b8b.png)
+
+Убедимся, что все работает:
+
+![image](https://user-images.githubusercontent.com/78553805/234381551-57e8ff6a-0b17-410c-a909-a51e9afe9ed7.png)
+
+
+Затюним таймауты, подключившись к необходимой ноде, и изменив файл redis.conf
