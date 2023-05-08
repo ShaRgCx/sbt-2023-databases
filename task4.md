@@ -134,9 +134,10 @@ SoundCloud это популярная площадка для выкладыв�
 
 ## Источники
 Основная информация была получена с [официального сайта](https://prometheus.io/) и следующих статей:
-https://habr.com/ru/companies/southbridge/articles/455290/
-https://habr.com/ru/companies/otus/articles/358588/
-https://habr.com/ru/companies/ozontech/articles/657933/
-https://habr.com/ru/companies/selectel/articles/275803/
+
++ https://habr.com/ru/companies/southbridge/articles/455290/
++ https://habr.com/ru/companies/otus/articles/358588/
++ https://habr.com/ru/companies/ozontech/articles/657933/
++ https://habr.com/ru/companies/selectel/articles/275803/
 
 
